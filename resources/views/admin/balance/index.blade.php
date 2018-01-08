@@ -14,13 +14,13 @@
 @section('content')
     <div class="box">
         <div class="box-header">
-            <a href="" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Recarregar</a>
+            <a href="{{route('balance.deposito')}}" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Depositar</a>
             <a href="" class="btn btn-danger"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Sacar</a>
         </div>   
         <div class="box-body">
             <div class="col-sm-5 col-lg-5 col-md-5 small-box bg-green">
                 <div class="inner">
-                    <h3>R$ 90,00</h3>
+                    <h3>R$ {{number_format($amaout, 2, ',', '')}}</h3>
                 </div>
                 <div class="icon">
                     <i class="ion ion-cash"></i>
